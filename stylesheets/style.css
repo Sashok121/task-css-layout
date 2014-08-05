@@ -1,0 +1,215 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+@font-face{
+	font-family: m_Brody; 
+    src: url(../fonts/m-brody.ttf);
+    font-family: Roboto Condensed; 
+    src: url(../fonts/RobotoCondensed-Regular.ttf);
+    font-weight: 100;
+    font-family: PT Sans; 
+    src: url(../fonts/PT Sans.ttf);
+}
+body {
+	background: url(../assets/images/backgroundBottom.gif)  bottom repeat-x, url(../assets/images/backgroundTop.gif)  top repeat-x, url(../assets/images/background.gif);
+	width: 998px;
+	margin: 0 auto;
+	padding: 0;
+	font-family: m_Brody,Arial;
+	color: rgb(99, 101, 111);
+	font-size: 100%;
+}
+
+header{
+	overflow: hidden;	
+}
+.logo{
+	background: url(../assets/images/logo.png) no-repeat center,rgba(51,51,59,1);
+	border-radius: 0 0 20px 20px;
+	padding: 2%;
+	width: 22.32%;
+	height: 68px;
+	float: left;
+}
+.socialButtom {
+	width: 40.2785%;
+	float: right;	
+	margin-right: 3.275%;
+	margin-top: 5.85%;
+}
+button{
+	background-color: rgba(51, 51, 5, 0);
+}
+.socialButtom a {
+	background-color: rgb(51,51,59);
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 50%;
+	border-width: 0;
+	display: inline-block;
+	width: 15.052%;
+	height: 59px;
+	margin-right: 8%;
+}
+a.mailHref {
+	background-image: url(../assets/images/mailButton.png);
+}
+a.vkHref {
+	background-color: rgb(30, 30, 34);
+	background-image: url(../assets/images/vkButton.png);
+}
+a.twitterHref {
+	background-image: url(../assets/images/twitterButton.png);
+}
+a.facebookHref {
+	background-image: url(../assets/images/facebookButton.png);
+}
+.allScrinshot {
+	margin-top: 8.5%;
+	margin-left: 5.35%;
+	float: left;
+	position: relative;
+	font-size: 1.8em;
+	width: 15%;
+	line-height: .89em;
+	text-shadow: rgb( 0, 0, 0) 0 1px 0;
+}
+.allScrinshot:after{
+	 width: 22.0483%;
+	 height: 50.888%;
+	 content: "";
+	 position: absolute;
+	 top: 22%;
+	 right: 3%;
+	 background-image: url(../assets/images/arrow.png);
+
+}
+ 
+.headerTitle{
+	width: 34.6%;
+	margin-top: 19.8%;
+}
+.headerTitle img {
+	float: left;
+}
+.headerTitle h1{
+	font-family: Roboto Condensed;
+	display: block;
+	color: rgb(208, 162, 43);
+	font-size: 2.7em;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin-left: 29%;
+	line-height: 1.1em;
+	text-shadow:rgb(0, 0, 0) 1px 2px 2px;
+}
+.lineBeforeAfter:before, .lineBeforeAfter:after{
+	content:"";
+	display: inline-block;	
+	width: 18.8%;
+	margin-bottom: 1.8%;
+	border-top: 1.5px solid rgb(44, 44, 46);
+	border-bottom: 1.5px solid rgb(99, 101, 111);	
+}
+.lineBeforeAfter:before{
+	margin-right: 1.5%;
+}
+.lineBeforeAfter:after{
+	margin-left: 1.5%;
+}
+.headerTitle p{
+	background: inherit;
+	width: 100%;
+	font-family: PT Sans;
+	float: left;
+	padding: 2.5% 0;	
+	display: inline-block;
+	letter-spacing: .065em;
+	
+}
+.headerTitle p:last-child{
+	background: white;
+	width: 100%;
+	color: rgb(188,186,171);
+	margin: 0;
+	letter-spacing: .075em;
+	text-shadow:  rgb(0,0,0) 0 1px  0px;
+	-webkit-background-clip: text;
+	background-clip: text;
+}
+.iphoneSlyder{
+	height: 405px;
+	width: 20%;
+	background: url(../assets/images/iphone_bk.png) no-repeat center top;
+	float: left;
+	margin: 3.6% 0 0 9.5%;
+	z-index: 1;
+	padding: 7% 1.6% 1.6%;
+}
+.slyber img {
+	width: 100%;
+	height: 86%;
+}
+.slyber section {
+	height: 8%;
+}
+.slyber a{
+	float: left;
+	background-color: rgb(43, 43, 41);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 16%;
+	background-image: url(../assets/images/buttonBack.png);
+	height: 100%;
+	border-radius: 50%;
+	display: inline-block;
+	border: 3px solid rgb(66, 65, 65);
+	list-style-type: none;
+	margin-top: 5%;
+	margin-left: 10%;
+}
+.slyber a:last-of-type {
+	float: right;
+	margin-right: 9%;
+}
+.slyber a:hover{
+	background-color: rgb(29, 29, 28);
+	background-image: url(../assets/images/buttonBackHover.png);
+	border-width: 2px;
+}
+
+.slyber li {
+	float: left;
+	margin-top: 7%;
+	font-size: 2.2em;
+	margin-right: -4%;
+	color: rgb(133, 131, 125);
+}
+.slyber li:first-child{
+	clear: both;
+	margin-left: 5%;
+}
+.nextSlider {
+	-webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.download{
+	width: 23.5%;
+	background: red;
+	margin-top: 13%;
+	height: 100px;
+	float: left;
+
+}
+
+
+
+
+
+body>div:last-child{
+	padding-top:142%;
+}
