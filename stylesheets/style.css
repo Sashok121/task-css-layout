@@ -27,7 +27,10 @@ header{
 	overflow: hidden;	
 }
 .logo{
-	background: url(../assets/images/logo.png) no-repeat center,rgba(51,51,59,1);
+	background-color: rgba(51,51,59,1);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(../assets/images/logo.png);
 	border-radius: 0 0 20px 20px;
 	padding: 20px;
 	width: 22.32%;
@@ -85,7 +88,7 @@ a.facebookHref {
 	line-height: 1.1em;
 	text-shadow:rgb(0, 0, 0) 1px 2px 2px;
 }
-.headerTitle p{
+.headerTitle p.lineBeforeAfter{
 	background: inherit;	
 	font-family: PT Sans;
 	float: left;
@@ -93,7 +96,7 @@ a.facebookHref {
 	display: inline-block;
 	letter-spacing: .065em;
 }
-.headerTitle p:last-child{
+.headerTitle p{
 	background: white;	
 	color: rgb(188,186,171);
 	margin: 0;
@@ -102,11 +105,14 @@ a.facebookHref {
 	-webkit-background-clip: text;
 	background-clip: text;
 }
+.headerTitle p.second{
+	display: none;
+}
 .lineBeforeAfter:before, .lineBeforeAfter:after{
 	content:"";
 	display: inline-block;	
 	width: 62px;
-	margin-bottom: 1.8%;
+	margin-bottom: 4px;
 	border-top: 1.5px solid rgb(44, 44, 46);
 	border-bottom: 1.5px solid rgb(99, 101, 111);	
 }
@@ -115,7 +121,7 @@ a.facebookHref {
 }
 .lineBeforeAfter:after{
 	margin-left: 5px;
-	width: 60px;
+	width: 58px;
 }
 
 .download{
@@ -137,6 +143,7 @@ a.facebookHref {
 	padding: 0;
 }
 button{
+	width: 236px;
 	font-family: Myriad Pro;
 	font-size: 1.1em;
 	padding-left: 64px;
@@ -144,7 +151,7 @@ button{
 	border-radius: 10px;
 	background-repeat:  no-repeat; 
 	background-position:  13% center;
-	width: 100%;
+	display: block;
 	border: 1px solid rgb(238,192,124);
 	margin-top: 5.15%;
 	height: 70px;
@@ -326,7 +333,7 @@ button>span{
 }
 .container nav a{
 	margin: 0 0 0 28px;
-	height: 100px;
+	
 	width: 160px;
 	display: inline-block;
 	color: rgb(82,80,81);
@@ -351,7 +358,7 @@ button>span{
 	color: rgb(133, 131, 125);
 }
 .container nav a:nth-of-type(2){
-	margin-left: 30;
+	margin-left: 30px;
 	width: 190px;
 }
 .container nav a:nth-of-type(3){
@@ -479,4 +486,184 @@ footer>a{
 .vkFooter figure{
 	background-color: rgb(77,111,147);
 	background-image: url(../assets/images/vkButtonW.png);
+}
+@media screen and (max-width: 768px) {
+	body{
+		width: 768px;
+		background-size: auto 260px,auto 395px, auto;
+		padding-right: 15px;
+	}
+	.logo{
+		width: 158px;
+		height: 42px;
+		margin-left: 15px;
+		border-radius: 0 0 15px 15px;
+		background-size: 85%;
+	}
+	.socialButtom{		
+		margin-top: 25px;
+		margin-right: 40px;
+	}
+	.socialButtom a{
+		margin-right: 35px;
+	}
+	.headerTitle{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		flex-wrap: nowrap;
+		text-align: center;
+		margin-bottom: 60px;
+		margin-top: 116px;
+	}
+	.headerTitle img{
+		width: 85px;
+	}
+	.headerTitle h1{
+		float: left;
+		margin-left: 11px;
+		width: 160px;			
+	}
+	.headerTitle div{
+		width: 315px;
+		margin-top: 23px;
+		order:1;
+		align-items:center;
+	}
+	
+	.headerTitle p{
+		order: 1;
+		font-family: Myriad Pro;
+	}
+	.headerTitle p.lineBeforeAfter{
+		order: 0;
+		font-size: 1.15em;
+		letter-spacing: -.06em;
+		font-weight: bold;
+		color: rgb(82,80,81);
+		font-family: Myriad Pro;
+		width: 100%;
+	}
+	p.lineBeforeAfter:before,p.lineBeforeAfter:after{
+		width: 36%;
+	}
+	.headerTitle p.first{
+		display: none;
+	}
+	.headerTitle p.second{
+		width: 400px;
+		display: inline-block;
+		font-size: 1.1em;
+		margin-top: 20px;
+		letter-spacing: 0;
+	}
+	.download{
+		width: 580px;
+		margin-top: 0px;
+		margin-bottom: 63px;
+		padding: 40px 95px;
+		display: flex;
+		flex-wrap: wrap;
+
+
+	}
+	.download h2{
+		width: 200px;
+		line-height: 1.6em;
+		float: left;
+		padding: 0;
+		margin-left: 20px;
+		
+	}
+	.download button{
+		margin-top: 8px;
+		height: 69px;
+		float: left;
+		order:1;
+	}
+	.download p{
+		width: 35px;
+		float: left;
+		order:1;
+		height: 35px;
+		margin: 20px 36px;
+	}
+	.download p:before, .download p:after{
+		display: none;
+	}
+	.download h2:last-of-type{
+		width: 150px;
+		margin: 0 0 0 160px;
+	}
+	.slyders{
+		width: 697px;
+		float: left;
+		margin-left: 50px;
+	}
+	.slyders p{
+		margin: 44px 0 0 0;
+		font-size: 1.75em;
+	}
+	.iphoneSlyder{
+		clear: both;
+		margin: 150px 0 0 30px;
+	}
+	.ipadSlyder{
+		margin: 0 0 0 180px;
+	}
+	.ipadSlyder a{
+		margin-top: 530px;
+	}
+	.container nav{
+		width: 570px;
+		margin-top: 70px;
+		margin-left: 115px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding-bottom: 53px;
+	}
+	.container nav a{
+		width: 140px;
+		margin: 37px 0 0 0;
+	}
+	.container nav:after{
+		display: none;
+	}
+	.container nav a>h3{
+		font-size: 1.75em;
+		font-weight: 100;
+	}
+	.container nav a>p{
+		font-size: 1.1em;
+		font-family: Myriad Pro;
+		font-weight: 500;
+		margin-top: 8px;
+	}
+	.stat{
+		display: none;
+	}
+	footer{
+		width: 700px;
+		margin-top: 56px;
+		padding-left: 50px;
+	}
+	.footerButton{
+		width: 300px;		
+		margin-top: -67px;
+		margin-right: 0px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.footerButton li{
+		margin: 0 33px 30px 12px;
+	}
+	.facebookFooter, .twitFooter{
+		order:1;
+	}
+	.googleFooter, .mailFooter{
+		order:2;
+	}
 }
