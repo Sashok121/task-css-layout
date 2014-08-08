@@ -5,11 +5,17 @@
 @font-face{
 	font-family: m_Brody; 
     src: url(../fonts/m-brody.ttf);
+	}
+	@font-face{
     font-family: Roboto Condensed; 
     src: url(../fonts/RobotoCondensed-Regular.ttf);
-    font-weight: 100;
+	font-weight: 100;
+	}
+	@font-face{    
     font-family: PT Sans; 
-    src: url(../fonts/PT Sans.ttf);
+    src: url(../fonts/PT_Sans.ttf);
+	}
+	@font-face{
     font-family: Myriad Pro;
     src : url(../fonts/MyriadPro-Regular.otf);
 }
@@ -18,7 +24,7 @@ body {
 	width: 998px;
 	margin: 0 auto;
 	padding: 0;
-	font-family: m_Brody,Arial;
+	font-family: m_Brody;
 	color: rgb(99, 101, 111);
 	font-size: 100%;
 }
@@ -71,14 +77,14 @@ a.facebookHref {
 
  
 .headerTitle{
-	width: 335px;
+	width: 345px;
 	margin-top: 197px;
 }
 .headerTitle img {
 	float: left;
 }
 .headerTitle h1{
-	font-family: Roboto Condensed;
+	font-family: 'Roboto Condensed';
 	display: block;
 	color: rgb(208, 162, 43);
 	font-size: 2.7em;
@@ -98,14 +104,13 @@ a.facebookHref {
 	
 }
 .headerTitle p{
-	background: white;	
-	font-family: PT Sans;
+		
+	font-family: 'PT Sans';
 	color: rgb(188,186,171);
 	margin: 0;
 	font-size: 1.1em;	
 	text-shadow:  rgb(0,0,0) 0 1px  0px;
-	-webkit-background-clip: text;
-	background-clip: text;
+	
 }
 .headerTitle p.second{
 	display: none;
@@ -134,7 +139,7 @@ a.facebookHref {
 
 }
 .download h2{
-	font-family: PT Sans;
+	font-family: 'PT Sans';
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 1.2em;	
@@ -146,7 +151,7 @@ a.facebookHref {
 }
 button{
 	width: 236px;
-	font-family: Myriad Pro;
+	font-family: 'Myriad Pro';
 	font-size: 1.1em;
 	padding-left: 64px;
 	text-align: left;
@@ -171,7 +176,7 @@ button>span{
 }
 .download p:before, .download p:after{
 	content: "";
-	width: 92px;
+	width: 82px;
 	margin-bottom: 7px;
 	background-color: rgb(154,145,143);
 	display: inline-block;	
@@ -217,7 +222,7 @@ button>span{
 	position: relative;
 }
 p.slyderName a{
-	font-family: Myriad Pro;
+	font-family: 'Myriad Pro';
 	color: rgb(82,80,81);
 	font-size: .85em;
 	text-decoration: none;
@@ -285,12 +290,12 @@ p a.activeSlyder{
 	float: left;
 	margin-top: 15px;
 	font-size: 2.2em;
-	margin-right: -9px;
+	margin-right: 20px;
 	color: rgb(133, 131, 125);
 }
 .slyder li:first-child{
 	clear: both;
-	margin-left: 17px;
+	margin-left: 70px;
 }
 .nextSlider {
 	-webkit-transform: rotate(180deg);
@@ -326,18 +331,18 @@ p a.activeSlyder{
 }
 .ipadSlyder li{
 	margin-top: -9%;
-	margin-left: 2.09%;
+	
 
 }
 .ipadSlyder li:first-child{
-	margin-left: 33.8%; 
+	margin-left: 45%; 
 }
 .container nav{
 	width: 100%;
 	position: relative;
 	float: left;
 	margin-top: 85px;
-	padding-bottom: 135px;
+	padding-bottom: 45px;
 	
 
 }
@@ -367,11 +372,11 @@ p a.activeSlyder{
 .container nav a>h3{
 	text-align: center;
 	font-size: 1.65em;
-	font-family: Roboto Condensed;
+	font-family: 'Roboto Condensed';
 	margin-top: 7px;
 }
 .container nav a>p{
-	font-family: PT Sans;
+	font-family: 'PT Sans';
 	text-align:center;
 	font-size: 1.2em;
 	margin-top: 13px;
@@ -389,10 +394,10 @@ p a.activeSlyder{
 .stat{
 	width: 100%;
 	float: left;
-	font-family: PT Sans;
+	font-family: 'PT Sans';
 }
 .stat h2{
-	font-family: Roboto Condensed;
+	font-family: 'Roboto Condensed';
 	margin-top: 40px;
 	font-size: 2.75em;
 	font-weight: 500;
@@ -417,7 +422,7 @@ footer{
 	width: 100%;
 	height: 135px;
 	float: left;
-	font-family: PT Sans;
+	font-family: 'PT Sans';
 	margin-top: 120px;
 	font-size: 1.5em;
 	padding-bottom: 72px;
@@ -437,7 +442,7 @@ footer>a{
 .footerButton{
 	float: right;
 	margin-top: -14px;
-	font-family: Myriad Pro;
+	font-family: 'Myriad Pro';
 
 }
 .footerButton li{
@@ -473,7 +478,7 @@ footer>a{
 	margin-top: 4px;
 	font-size: .5em;
 	margin-bottom: 2px;
-	text-shadow:rgb(0,0,0),0,0 1px;
+	text-shadow:rgb(0,0,0) 0 0 1px;
 }
 .footerButton li>figure{
 	height: 30px;
@@ -560,7 +565,7 @@ footer>a{
 	
 	.headerTitle p{
 		order: 1;
-		font-family: Myriad Pro;
+		font-family: 'Myriad Pro';
 	}
 	.headerTitle p.lineBeforeAfter{
 		order: 0;
@@ -568,7 +573,7 @@ footer>a{
 		letter-spacing: -.06em;
 		font-weight: bold;
 		color: rgb(82,80,81);
-		font-family: Myriad Pro;
+		font-family: 'Myriad Pro';
 		width: 100%;
 	}
 	p.lineBeforeAfter:before,p.lineBeforeAfter:after{
@@ -663,7 +668,7 @@ footer>a{
 	}
 	.container nav a>p{
 		font-size: 1.1em;
-		font-family: Myriad Pro;
+		font-family: 'Myriad Pro';
 		font-weight: 500;
 		margin-top: 8px;
 	}
@@ -702,8 +707,8 @@ footer>a{
 		padding-bottom: 5px;
 		padding-left: 13px;
 		margin: 0;
-		height: 2080px;
-		background-size: auto 430px,auto 320px, auto 360px, auto;
+		height: 2150px;
+		background-size: auto 430px,auto 390px, auto 380px, auto;
 	}
 	header, div.cotainer{
 		width: 407px;
@@ -733,7 +738,7 @@ footer>a{
 		background-size: 85%;
 	}
 	p.lineBeforeAfter:before,p.lineBeforeAfter:after{
-		width: 96px;
+		width: 95px;
 
 	}
 	p.lineBeforeAfter:before{
@@ -777,7 +782,7 @@ footer>a{
 		justify-content: center;
 	}
 	.download h2{
-		font-family: Myriad Pro;
+		font-family: 'Myriad Pro';
 	}
 	.download h2:last-of-type{
 		width: 236px;
@@ -832,11 +837,10 @@ footer>a{
 		background-image:url(../assets/images/buttonBackHover1.png); 
 	}
 	.slyder li{
-		margin-top: 62px;
-		margin-right: -12px;
+		margin-top: 62px;		
 	}
 	.slyder li:first-child{
-		margin-left: 45px;
+		margin-left: 70px;
 	}
 	.container nav{
 		width: 385px;
@@ -865,7 +869,7 @@ footer>a{
 	}
 	footer p, footer a{
 		order: 1;
-		font-family: Myriad Pro;
+		font-family: 'Myriad Pro';
 		font-size: .95em;
 	}
 	.footerButton{
@@ -890,5 +894,113 @@ footer>a{
 		padding: 10px 25px 40px 20px;
 		margin-bottom: 65px;
 
+	}
+}
+@media screen and (max-width: 320px){
+	body{
+		width: 320px;
+		height: 2625px;
+		padding: 0;		
+		background-position-y: 710px, bottom, top;
+		background-size: auto 430px, auto 410px, auto 375px, auto;
+	}
+	header{
+		width: 320px;
+		margin: 0;
+	}
+	.logo{
+		margin-left: 15px;
+	}
+	.socialButtom{
+		width: 225px;
+		margin: 15px 10px;
+	}
+	.socialButtom a{
+		margin-right: 9px;
+	}
+	.headerTitle img{
+		position: absolute;
+		margin-top: 15px;
+		margin-left: 45px;
+	}
+	.headerTitle h1{
+		width: 155px;
+		order: 0;
+		margin-top: 15px;
+		margin-left: 95px;
+		text-align: left;
+	}
+	.headerTitle p.lineBeforeAfter{
+		width: 320px;
+		margin-left: -52px;
+	}
+	p.lineBeforeAfter:before, p.lineBeforeAfter:after{
+		width: 52px;
+	}
+	p.lineBeforeAfter:before{
+		
+		margin-right: 10px;
+	}
+	p.lineBeforeAfter:after{
+		margin-left: 10px;
+	}
+	.headerTitle{
+		margin-bottom: 50px;
+	}
+	.headerTitle p.second{
+		width: 215px;
+		text-align: center;
+		margin-top: 15px;
+		font-size: 1.1em;
+	}
+	.download{
+		margin-left: 40px;
+	}
+	.download h2:last-of-type{
+		width: 300px;
+	}
+	.slyders, p.slyderName{
+		width: 320px;
+	}
+	.iphoneSlyder{
+		margin-left: 40px;
+	}
+	a.backSlider{
+		margin-left: -55px;
+	}
+	a.nextSlider{
+		margin-left: 222px;
+	}
+	.container nav{
+		width: 320px;
+		margin-top: 25px;
+		margin-bottom: 35px;
+	}
+	.container nav a,.container nav a:nth-of-type(2), .container nav a:last-of-type{
+		width: 190px;
+		margin-left: 0;
+		margin-top: 45px;
+	}
+	.container nav a>p{
+		width: 190px;
+	}
+	.footerButton{
+		width: 300px;
+		margin-left: 33px;
+		margin-top: 58px;
+	}
+	.footerButton li{
+		margin-right: 45px;
+		margin-bottom: 28px;
+	}
+	footer p.footerInfo{
+		width: 320px;
+		margin-top: 181px;
+		margin-left: 0;
+		text-align: center;
+	}
+	footer>a{
+		margin-left: 28px;
+		margin-bottom: 40px;
 	}
 }
