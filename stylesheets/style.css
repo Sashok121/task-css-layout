@@ -71,7 +71,7 @@ a.facebookHref {
 
  
 .headerTitle{
-	width: 34.6%;
+	width: 335px;
 	margin-top: 197px;
 }
 .headerTitle img {
@@ -89,18 +89,20 @@ a.facebookHref {
 	text-shadow:rgb(0, 0, 0) 1px 2px 2px;
 }
 .headerTitle p.lineBeforeAfter{
-	background: inherit;	
-	font-family: PT Sans;
+	background: inherit;
+	color: rgb(82,80,81);	
 	float: left;
 	padding: 8px 0;	
+	font-size: 1.1em;
 	display: inline-block;
-	letter-spacing: .065em;
+	
 }
 .headerTitle p{
 	background: white;	
+	font-family: PT Sans;
 	color: rgb(188,186,171);
 	margin: 0;
-	letter-spacing: .075em;
+	font-size: 1.1em;	
 	text-shadow:  rgb(0,0,0) 0 1px  0px;
 	-webkit-background-clip: text;
 	background-clip: text;
@@ -117,10 +119,10 @@ a.facebookHref {
 	border-bottom: 1.5px solid rgb(99, 101, 111);	
 }
 .lineBeforeAfter:before{
-	margin-right: 5px;
+	margin-right: 3px;
 }
 .lineBeforeAfter:after{
-	margin-left: 5px;
+	margin-left: 3px;
 	width: 58px;
 }
 
@@ -199,12 +201,30 @@ button>span{
 }
 .slyders{
 	float: right;
-	width: 68.5%;
+	width: 685px;
+}
+.slyderName{
+	display: none;
+	clear: both;
+	text-align: center;
+	width: 200px;
+	margin: 0;
+	
 }
 .slyder{
 	box-shadow: black 0 3px 3px;
 	border-radius: 35px;
 	position: relative;
+}
+p.slyderName a{
+	font-family: Myriad Pro;
+	color: rgb(82,80,81);
+	font-size: .85em;
+	text-decoration: none;
+}
+p a.activeSlyder{
+	text-decoration: underline;
+	color: rgb(188,186,171);
 }
 .allScrinshot {
 	float: left;
@@ -512,18 +532,24 @@ footer>a{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		flex-wrap: nowrap;
+		flex-wrap: wrap;
 		text-align: center;
 		margin-bottom: 60px;
 		margin-top: 116px;
 	}
 	.headerTitle img{
 		width: 85px;
+		order: 1;
+		margin-top: 20px;
+		position: absolute;
+		margin-left: 215px;
 	}
 	.headerTitle h1{
 		float: left;
 		margin-left: 11px;
-		width: 160px;			
+		width: 160px;
+		margin-top: 20px;
+		order:1;			
 	}
 	.headerTitle div{
 		width: 315px;
@@ -665,5 +691,204 @@ footer>a{
 	}
 	.googleFooter, .mailFooter{
 		order:2;
+	}
+}
+@media screen and (max-width: 480px) {
+	body{
+		width: 407px;
+		padding: 0;
+		background: url(../assets/images/backgroundBottom.gif)repeat-x,url(../assets/images/backgroundBottom.gif) repeat-x, url(../assets/images/backgroundTop.gif) top repeat-x, url(../assets/images/background.gif);
+		background-position-y: 720px,bottom,top;
+		padding-bottom: 5px;
+		padding-left: 13px;
+		margin: 0;
+		height: 2080px;
+		background-size: auto 430px,auto 320px, auto 360px, auto;
+	}
+	header, div.cotainer{
+		width: 407px;
+	}
+	.logo{
+		width: 19px;
+		margin: 0;
+		padding: 10px 20px;
+		background-image: url(../assets/images/logo1.png);
+	}
+	.socialButtom{
+		margin: 15px;
+		width: 315px;
+		
+	}
+	.socialButtom a{
+		width: 44px;
+		height: 44px;
+		background-size: 50%;
+		margin-right: 40px;
+	}
+	a.facebookHref{
+		background-size: 26%;
+	}
+	.socialButtom a:last-of-type{
+		margin: 0;
+		background-size: 85%;
+	}
+	p.lineBeforeAfter:before,p.lineBeforeAfter:after{
+		width: 96px;
+
+	}
+	p.lineBeforeAfter:before{
+			margin-right: 10px;
+	}
+	p.lineBeforeAfter:after{
+		margin-left: 10px;
+	}
+	.headerTitle{
+		margin-top: 87px;
+		margin-bottom: 34px;
+	}
+	.headerTitle p.lineBeforeAfter{
+		padding: 15px 0;
+		font-size: 1.1em;
+	}
+	.headerTitle img{
+		order:0;
+		width: 70px;
+		margin: 0;
+		position: relative;
+	}
+	.headerTitle h1{
+		width: 270px;
+		margin: 10px 0 0 0;
+		font-size: 1.89em;
+	}
+	.headerTitle p.second{
+		font-size: 1.2em;
+		width: 371px;
+		text-indent: 20px;
+		text-align: justify;
+		margin-top: 25px;
+	}
+	.download{
+		width: 240px;
+		margin: 0 0 0 76px;
+		height: auto;
+		padding: 10px 0 0;
+		flex-wrap: wrap;		
+		justify-content: center;
+	}
+	.download h2{
+		font-family: Myriad Pro;
+	}
+	.download h2:last-of-type{
+		width: 236px;
+		order: 1;
+		margin: 13px 0;
+
+	}
+	.download p{
+		margin: 5px 0 25px;
+		height: 20px;
+		width: 236px;
+	}
+	.download p:before, .download p:after{
+		display: inline-block;
+		width: 93px;
+	}
+	p.allScrinshot, section.ipadSlyder{
+		display: none;
+	}
+	.slyders{
+		margin:6px 0 0 0;
+		width: 407px; 
+	}
+	p.slyderName{
+		width: 400px;
+		display:block;
+		float: left;
+		margin:15px 0 0 0;
+	}
+	.iphoneSlyder{
+		margin: 30px 0 0 83px;
+	}
+	.slyder a{
+		width: 45px;
+		height: 45px;
+		background-color: inherit;
+		background-image: url(../assets/images/buttonBack1.png);
+		border: none;
+		position: absolute;
+		margin-top: -200px; 
+	}
+	a.nextSlider{
+		margin-left: 260px;
+		transform: none;
+	}
+	a.backSlider{
+		transform: rotate(180deg);
+		margin-left: -85px
+	}
+	.slyder a:hover{
+		background-color: inherit;
+		background-image:url(../assets/images/buttonBackHover1.png); 
+	}
+	.slyder li{
+		margin-top: 62px;
+		margin-right: -12px;
+	}
+	.slyder li:first-child{
+		margin-left: 45px;
+	}
+	.container nav{
+		width: 385px;
+		margin-top: 40px;
+		margin-left: 4px;
+		padding-bottom: 35px;
+	}
+	.container nav a{
+		margin-top: 25px;
+	}
+	.container nav a:nth-of-type(2),.container nav a:last-of-type{
+		margin-left: 65px;
+		width: 175px;
+	}
+	.container nav a:nth-of-type(3){
+		display: none;
+	}
+	footer{
+		width: 407px;
+		margin-top: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		align-content:center;
+
+	}
+	footer p, footer a{
+		order: 1;
+		font-family: Myriad Pro;
+		font-size: .95em;
+	}
+	.footerButton{
+		width: 407px;
+		margin-top: 39px;
+	}
+	.footerButton li{
+		margin: 0;
+		margin-right: 25px;
+	}
+	footer p.footerInfo{
+		width: 235px;
+		margin-left: 90px;
+		margin-top: 105px;
+		font-weight: bold;
+		
+	}
+	footer>a{
+		width: 220px;
+		margin-top: 80px;
+		margin-left: 60px;
+		padding: 10px 25px 40px 20px;
+		margin-bottom: 65px;
+
 	}
 }
